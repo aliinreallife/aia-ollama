@@ -68,7 +68,7 @@ export default function ChatBottombar({
           }}
         >
           <form onSubmit={handleSubmit} className="w-full items-center flex relative gap-2">
-            <div className="flex">
+{/*             <div className="flex">
               <Link
                 href="#"
                 className={cn(
@@ -77,7 +77,7 @@ export default function ChatBottombar({
               >
                 <ImageIcon className="w-6 h-6 text-muted-foreground" />
               </Link>
-            </div>
+            </div> */}
 
             <TextareaAutosize 
               autoComplete="off"
@@ -86,7 +86,7 @@ export default function ChatBottombar({
               onKeyDown={handleKeyPress}
               onChange={handleInputChange}
               name="message"
-              placeholder="Ask Ollama anything..."
+              placeholder="Ask aia anything..."
               className="border-input max-h-20 px-5 py-4 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 w-full border rounded-full flex items-center h-14 resize-none overflow-hidden dark:bg-card/35"
             />
               {!isLoading ? (
